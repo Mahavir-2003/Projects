@@ -1,0 +1,16 @@
+<%- include("partials/header"); -%>
+
+<div class="addblog">
+  <p>Add Blog</p>
+</div>
+
+<div class="form">
+    <form action="/addblog" method="post">
+      <input type="text" name="blog_title" placeholder="Your Blog Title Here" autocomplete="off" />
+      <textarea name="blog_data"  placeholder="Tell us Something about your Blog"></textarea>
+      <button name="list" type="submit" value ="blog" >Submit Your Blog</button>   
+    </form>
+  </div>
+</div>
+
+<%- include("partials/footer"); -%>

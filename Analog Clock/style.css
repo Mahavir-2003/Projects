@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12); */
+    background-color: rgb(34, 186, 197);
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    border: 1px solid #fff;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    width: 330px;
+    height:330px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.num{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 30px;
+    font-family: cursive;
+    text-align: center;
+    font-weight: bold;
+}
+
+.spike{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.second{
+        transform: rotate(0deg);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        z-index: 50;
+}
+
+.orig-second{
+    width: 180px;
+    height: 3px;
+    background-color: #FF3131;
+    border-radius: 10px;
+    position: absolute;
+    left: -50px;
+}
+
+.minute{
+    transform: rotate(-90deg);
+    transform-origin: top;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 40;
+}
+
+.orig-minute{
+width: 110px;
+height: 8px;
+background-color: #fff;
+border-radius: 10px;
+position: absolute;
+}
+
+.hour{
+    transform: rotate(-90deg);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 30;
+}
+
+.orig-hour{
+width: 90px;
+height: 8px;
+background-color: rgba(51, 48, 48, 0.664);
+border-radius: 10px;
+position: absolute;
+}
+
+
+.dot{
+    width: 20px;
+    height: 20px;
+    background-color: #FF3131;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 60;
+}
+
+.num1{
+    transform: rotate(30deg);
+}
+.num2{
+    transform: rotate(60deg);
+}
+.num3{
+    transform: rotate(90deg);
+}
+.num4{
+    transform: rotate(120deg);
+}
+.num5{
+    transform: rotate(150deg);
+}
+.num6{
+    transform: rotate(180deg);
+}
+.num7{
+    transform: rotate(210deg);
+}
+.num8{
+    transform: rotate(240deg);
+}
+.num9{
+    transform: rotate(270deg);
+}
+.num10{
+    transform: rotate(300deg);
+}
+.num11{
+    transform: rotate(330deg);
+}

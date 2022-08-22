@@ -1,0 +1,34 @@
+<%- include("partials/header"); -%>
+
+<div class="container">
+  <div class="page-data-container">
+    <div class="page-name">
+      <p><%= page_name %></p>
+    </div>
+    <div class="page-data">
+      <p><%= page_data %></p>
+    </div>
+  </div>
+</div>
+
+ <%  posts.forEach(function(post){ %>
+
+    <div class="container">
+      <div class="page-data-container">
+        <div class="page-name">
+          <p><%= post.blog_name %></p>
+        </div>
+        <div class="page-data">
+          <p>
+            <%= post.blog_data.substring(0,150) %><span>... </span
+            ><span><a href="/posts/<%= post.blog_name %>">Read More</a></span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+<%   }) %>
+
+
+
+ <%- include("partials/footer"); -%>
